@@ -1,0 +1,9 @@
+Compile server:
+make
+Compile client:
+g++ -ggdb -std=c++11 -Wall -pedantic -o client client-main.c client.c
+Run client:
+./client 127.0.0.1 8080 html/hello.html "host=me&dd=00&cc=19"
+
+Run server:
+./httpd 8080 lianzhen/
